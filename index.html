@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="themeBtn" class="theme-btn">🌙 Dark</button>
+        </div>
+
+        <div class="calculator">
+            <!-- History Panel -->
+            <div class="history-panel">
+                <div class="history-header">
+                    <span>📜 History</span>
+                    <button id="clearHistoryBtn" class="clear-history-btn">Clear</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="history-placeholder">No calculations yet</div>
+                </div>
+            </div>
+
+            <!-- Main Display -->
+            <div class="display">
+                <div class="expression" id="expression"></div>
+                <div class="current-operand" id="currentOperand">0</div>
+            </div>
+
+            <!-- Mode Toggle -->
+            <div class="mode-toggle">
+                <button id="modeBtn" class="mode-btn">🔬 Scientific</button>
+            </div>
+
+            <!-- Basic Buttons -->
+            <div class="button-grid" id="buttonGrid">
+                <!-- Row 1 -->
+                <button class="btn clear" id="clearBtn">AC</button>
+                <button class="btn delete" id="deleteBtn">⌫</button>
+                <button class="btn function" id="percentBtn">%</button>
+                <button class="btn operator" id="divideBtn">÷</button>
+
+                <!-- Row 2 -->
+                <button class="btn number" data-number="7">7</button>
+                <button class="btn number" data-number="8">8</button>
+                <button class="btn number" data-number="9">9</button>
+                <button class="btn operator" id="multiplyBtn">×</button>
+
+                <!-- Row 3 -->
+                <button class="btn number" data-number="4">4</button>
+                <button class="btn number" data-number="5">5</button>
+                <button class="btn number" data-number="6">6</button>
+                <button class="btn operator" id="subtractBtn">−</button>
+
+                <!-- Row 4 -->
+                <button class="btn number" data-number="1">1</button>
+                <button class="btn number" data-number="2">2</button>
+                <button class="btn number" data-number="3">3</button>
+                <button class="btn operator" id="addBtn">+</button>
+
+                <!-- Row 5 -->
+                <button class="btn number" data-number="0">0</button>
+                <button class="btn function" id="dotBtn">.</button>
+                <button class="btn equals" id="equalsBtn">=</button>
+                <button class="btn function" id="sqrtBtn">√</button>
+            </div>
+
+            <!-- Scientific Buttons -->
+            <div class="scientific-grid" id="scientificGrid">
+                <button class="btn sci-btn" id="sinBtn">sin</button>
+                <button class="btn sci-btn" id="cosBtn">cos</button>
+                <button class="btn sci-btn" id="tanBtn">tan</button>
+                <button class="btn sci-btn" id="logBtn">log</button>
+                <button class="btn sci-btn" id="lnBtn">ln</button>
+                <button class="btn sci-btn" id="powBtn">xʸ</button>
+                <button class="btn sci-btn" id="squareBtn">x²</button>
+                <button class="btn sci-btn" id="cubeBtn">x³</button>
+                <button class="btn sci-btn" id="factorialBtn">n!</button>
+                <button class="btn sci-btn" id="piBtn">π</button>
+                <button class="btn sci-btn" id="eBtn">e</button>
+                <button class="btn sci-btn" id="reciprocalBtn">1/x</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
